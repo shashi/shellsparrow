@@ -1,0 +1,47 @@
+#!/usr/bin/env python
+
+# ShellSparrow helper script
+# create your own options
+
+import sys
+if "help" in sys.argv:
+    print """
+**ShellSparrow**
+
+Hi, Welcome to ShellSparrow. Using Jabber
+Shell you can access any computer connected
+to the internet regaurdless of how many
+routers it is behind, and all that over the
+neat XMPP protocol. You can use any backend
+shell of your choice (for example, bash) by
+specifying it on the server.
+
+Usage:
+
+    * You can use any command that the user
+      running the daemon can run on this
+      computer, i.e if the shell daemon is
+      being run by the root user, you can
+      virtually do anything!
+    * If a command requires additional stdin
+      input, you can specify the input in
+      the next line (in the same nessage)
+      after the command for example,
+         sudo apt-get install somepackage
+         Y
+      Will confirm that you want to really
+      install the packages (notice the "Y"
+      in the second line).
+    * For commands that usem sudo (like the
+      one above), someone on the computer
+      has to enter the password in the same
+      terminal as the ShellSparrow for the
+      command to be completed.
+
+Help ShS:
+    ShellSparrow is released under the MIT
+    License. The source code can be obtained
+    at http://github.com/shashi/shellsparrow
+"""
+else:
+    print "Usage: `python shs help` for help"

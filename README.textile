@@ -1,0 +1,26 @@
+h1. ShellSparrow v0.1
+
+ShellSparrow lets you connect to a daemon on your computer over your favourite XMPP client and execute commands on your favourite command line shell like bash.
+
+h2(#config). Configuration
+
+A sample configuration is given in sample.shellsparrowrc file, it's pretty self-explanatory, but let me break it down for you:
+# the [shellsparrow] section compulsorily should contain these:
+	# jid: full@jid.of/thedaemon ->full UID of the jabber account the daemon should use to connect.
+	# password: password for the above account.
+# the [users] section should contain the JID (without resource name) of the users you want to grant access to.
+
+h2. Installation & Usage
+
+I am working on making a .deb for shellsparrow, but till then you will have to set it up manually, here's how you do it:
+# create a file called .shellsparrowrc in the $HOME directory and fill it up with the "configuration":#config
+# cd into the code directory type python shsd to start the daemon
+# use your favourite XMPP client from anywhere in the universe to connect to your computer!
+You can find the history of all the commands in $HOME/.shellsparrow/commandlog
+
+h2. Todo
+
+There's a lot todo yet, briefly:
+# create a script to simplify configuration
+# make more configuration options available, like path of the shell binary to use
+# make sessions consistent (currently, each command starts a new shell instance)

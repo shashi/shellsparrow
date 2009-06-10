@@ -1,0 +1,10 @@
+# You have to create a file called .sparrowshellrc in the $HOME directory
+# Here is a sample config file that you can build on
+
+[jabbersh]
+jid: mysparrow@example.org/bot	# user account to use to go online (get one from register.jabber.org)
+password: nothing		# password
+
+[users]				# List of all Jabber IDs to grant access to
+g0wda@jabber.org = shashi
+
