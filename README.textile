@@ -16,7 +16,7 @@ I am working on making a .deb for shellsparrow, but till then you will have to s
 # create a file called .shellsparrowrc in the $HOME directory and fill it up with the "configuration":#config
 # cd into the code directory type python shsd to start the daemon
 # use your favourite XMPP client from anywhere in the universe to connect to your computer!
-You can find the history of all the commands in $HOME/.shellsparrow/commandlog
+# You can find the history of all the commands in $HOME/.shellsparrow/commandlog
 
 h2. Todo
 
@@ -24,3 +24,8 @@ There's a lot todo yet, briefly:
 # create a script to simplify configuration
 # make more configuration options available, like path of the shell binary to use
 # make sessions consistent (currently, each command starts a new shell instance)
+# implement mapping of local usernames with JIDs to allow access with various user levels
+
+h2. License
+
+ShellSparrow is a Free Software, you are free to copy/adopt it untill you agree to keep it free. It is licensed under the MIT License, see COPYING for the full text.
