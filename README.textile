@@ -1,4 +1,4 @@
-h1. ShellSparrow v0.1
+h1. ShellSparrow v0.1.1
 
 ShellSparrow lets you connect to a daemon on your computer over your favourite XMPP client and execute commands on your favourite command line shell like bash.
 
