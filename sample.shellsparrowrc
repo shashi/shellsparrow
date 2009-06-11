@@ -6,5 +6,5 @@ jid: mysparrow@example.org/bot	# user account to use to go online (get one from 
 password: nothing		# password
 
 [users]				# List of all Jabber IDs to grant access to
-g0wda@jabber.org = shashi
+user@jabberserver.org = serveruser
 
